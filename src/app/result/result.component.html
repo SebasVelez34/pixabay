@@ -1,0 +1,31 @@
+<main>
+  <div class="container bg-light borderRadius-15 p-5 my-5 shadow">
+      <div class="row">
+          <div class="col-6 mx-auto mb-5">
+              <img src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2020/01/1578955240cm_vector.png" alt="" class="img-fluid">
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-xs-12 col-sm-4 mt-4" *ngFor="let image of images">
+              <div class="card">
+                  <a class="img-card" href="javascript:void(0)">
+                  <img [src]="image.largeImageURL" />
+                  </a>
+                  <div class="card-content">
+                      <div class="p-2">
+                          <p class="">
+                              <b>Tags: </b>{{ image.tags }}
+                          </p>
+                          <p class="">
+                              <b>Vistas: </b>{{ image.views }}
+                          </p>
+                          <p class="">
+                              <b>Likes: </b>{{ image.likes }}
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</main>

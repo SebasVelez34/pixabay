@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "pixabay"
+    }
+  },
+  "defaultProject": "pixabay",
+  "cli": {
+    "analytics": "070dc7d5-2685-45c6-970f-2b1ea409fabc"
+  }
 }
